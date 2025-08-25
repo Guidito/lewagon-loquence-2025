@@ -1,0 +1,40 @@
+current directory: D:/Guido/dashboardruby/lewagon-loquence/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+C:/Ruby27-x64/bin/ruby.exe -I C:/Ruby27-x64/lib/ruby/2.7.0 -r ./siteconf20250824-7436-113jcmk.rb extconf.rb
+creating Makefile
+
+current directory: D:/Guido/dashboardruby/lewagon-loquence/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: D:/Guido/dashboardruby/lewagon-loquence/vendor/bundle/ruby/2.7.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+generating cruby-x64-mingw32.def
+compiling cruby.c
+cruby.c: In function 'Init_cruby':
+cruby.c:76:65: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+   76 |   rb_define_singleton_method(st_mSkiptrace, "current_bindings", st_current_bindings, 0);
+      |                                                                 ^~~~~~~~~~~~~~~~~~~
+      |                                                                 |
+      |                                                                 VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+In file included from C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:2150,
+                 from C:/Ruby27-x64/include/ruby-2.7.0/ruby.h:33,
+                 from cruby.c:1:
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+cruby.c:53:1: note: 'st_current_bindings' declared here
+   53 | st_current_bindings(VALUE self)
+      | ^~~~~~~~~~~~~~~~~~~
+cruby.c:77:47: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+   77 |   rb_define_method(rb_eException, "bindings", st_exc_bindings, 0);
+      |                                               ^~~~~~~~~~~~~~~
+      |                                               |
+      |                                               VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+cruby.c:59:1: note: 'st_exc_bindings' declared here
+   59 | st_exc_bindings(VALUE self)
+      | ^~~~~~~~~~~~~~~
+make: *** [Makefile:246: cruby.o] Error 1
+
+make failed, exit code 2

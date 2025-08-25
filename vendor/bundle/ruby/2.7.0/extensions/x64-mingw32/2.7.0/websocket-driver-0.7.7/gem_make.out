@@ -1,0 +1,29 @@
+current directory: D:/Guido/dashboardruby/lewagon-loquence/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.7/ext/websocket-driver
+C:/Ruby27-x64/bin/ruby.exe -I C:/Ruby27-x64/lib/ruby/2.7.0 -r ./siteconf20250824-7436-19i3tcd.rb extconf.rb
+creating Makefile
+
+current directory: D:/Guido/dashboardruby/lewagon-loquence/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.7/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: D:/Guido/dashboardruby/lewagon-loquence/vendor/bundle/ruby/2.7.0/gems/websocket-driver-0.7.7/ext/websocket-driver
+make "DESTDIR="
+generating websocket_mask-x64-mingw32.def
+compiling websocket_mask.c
+websocket_mask.c: In function 'Init_websocket_mask':
+websocket_mask.c:31:46: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+   31 |     rb_define_singleton_method(Mask, "mask", method_websocket_mask, 2);
+      |                                              ^~~~~~~~~~~~~~~~~~~~~
+      |                                              |
+      |                                              VALUE (*)(VALUE,  VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int,  long long unsigned int)}
+In file included from C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:2150,
+                 from C:/Ruby27-x64/include/ruby-2.7.0/ruby.h:33,
+                 from websocket_mask.c:1:
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int,  long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+websocket_mask.c:3:7: note: 'method_websocket_mask' declared here
+    3 | VALUE method_websocket_mask(VALUE self, VALUE payload, VALUE mask)
+      |       ^~~~~~~~~~~~~~~~~~~~~
+make: *** [Makefile:246: websocket_mask.o] Error 1
+
+make failed, exit code 2

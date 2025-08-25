@@ -1,0 +1,100 @@
+current directory: D:/Guido/dashboardruby/lewagon-loquence/vendor/bundle/ruby/2.7.0/gems/puma-4.3.12/ext/puma_http11
+C:/Ruby27-x64/bin/ruby.exe -I C:/Ruby27-x64/lib/ruby/2.7.0 -r ./siteconf20250824-7436-1iptj34.rb extconf.rb
+checking for whether -D_FORTIFY_SOURCE=2 is accepted as CFLAGS... yes
+checking for whether -fstack-protector is accepted as LDFLAGS... yes
+checking for -lssp... yes
+checking for BIO_read() in -lcrypto... no
+checking for BIO_read() in -llibeay32... no
+creating Makefile
+
+current directory: D:/Guido/dashboardruby/lewagon-loquence/vendor/bundle/ruby/2.7.0/gems/puma-4.3.12/ext/puma_http11
+make "DESTDIR=" clean
+
+current directory: D:/Guido/dashboardruby/lewagon-loquence/vendor/bundle/ruby/2.7.0/gems/puma-4.3.12/ext/puma_http11
+make "DESTDIR="
+generating puma_http11-x64-mingw32.def
+compiling http11_parser.c
+compiling io_buffer.c
+io_buffer.c: In function 'Init_io_buffer':
+io_buffer.c:148:31: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+  148 |   rb_define_method(buf, "<<", buf_append, 1);
+      |                               ^~~~~~~~~~
+      |                               |
+      |                               VALUE (*)(VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int)}
+In file included from C:/Ruby27-x64/include/ruby-2.7.0/ruby.h:33,
+                 from io_buffer.c:2:
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+io_buffer.c:34:14: note: 'buf_append' declared here
+   34 | static VALUE buf_append(VALUE self, VALUE str) {
+      |              ^~~~~~~~~~
+io_buffer.c:149:35: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+  149 |   rb_define_method(buf, "append", buf_append2, -1);
+      |                                   ^~~~~~~~~~~
+      |                                   |
+      |                                   VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+io_buffer.c:69:14: note: 'buf_append2' declared here
+   69 | static VALUE buf_append2(int argc, VALUE* argv, VALUE self) {
+      |              ^~~~~~~~~~~
+io_buffer.c:150:35: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+  150 |   rb_define_method(buf, "to_str", buf_to_str, 0);
+      |                                   ^~~~~~~~~~
+      |                                   |
+      |                                   VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+io_buffer.c:115:14: note: 'buf_to_str' declared here
+  115 | static VALUE buf_to_str(VALUE self) {
+      |              ^~~~~~~~~~
+io_buffer.c:151:33: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+  151 |   rb_define_method(buf, "to_s", buf_to_str, 0);
+      |                                 ^~~~~~~~~~
+      |                                 |
+      |                                 VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+io_buffer.c:115:14: note: 'buf_to_str' declared here
+  115 | static VALUE buf_to_str(VALUE self) {
+      |              ^~~~~~~~~~
+io_buffer.c:152:33: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+  152 |   rb_define_method(buf, "used", buf_used, 0);
+      |                                 ^~~~~~~~
+      |                                 |
+      |                                 VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+io_buffer.c:122:14: note: 'buf_used' declared here
+  122 | static VALUE buf_used(VALUE self) {
+      |              ^~~~~~~~
+io_buffer.c:153:37: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+  153 |   rb_define_method(buf, "capacity", buf_capa, 0);
+      |                                     ^~~~~~~~
+      |                                     |
+      |                                     VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+io_buffer.c:129:14: note: 'buf_capa' declared here
+  129 | static VALUE buf_capa(VALUE self) {
+      |              ^~~~~~~~
+io_buffer.c:154:34: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+  154 |   rb_define_method(buf, "reset", buf_reset, 0);
+      |                                  ^~~~~~~~~
+      |                                  |
+      |                                  VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+io_buffer.c:136:14: note: 'buf_reset' declared here
+  136 | static VALUE buf_reset(VALUE self) {
+      |              ^~~~~~~~~
+make: *** [Makefile:246: io_buffer.o] Error 1
+
+make failed, exit code 2

@@ -1,0 +1,40 @@
+current directory: D:/Guido/dashboardruby/lewagon-loquence/vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.20/ext/mri
+C:/Ruby27-x64/bin/ruby.exe -I C:/Ruby27-x64/lib/ruby/2.7.0 -r ./siteconf20250824-7436-nvqpx4.rb extconf.rb
+creating Makefile
+
+current directory: D:/Guido/dashboardruby/lewagon-loquence/vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.20/ext/mri
+make "DESTDIR=" clean
+
+current directory: D:/Guido/dashboardruby/lewagon-loquence/vendor/bundle/ruby/2.7.0/gems/bcrypt-3.1.20/ext/mri
+make "DESTDIR="
+generating bcrypt_ext-x64-mingw32.def
+compiling bcrypt_ext.c
+bcrypt_ext.c: In function 'Init_bcrypt_ext':
+bcrypt_ext.c:117:60: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+  117 |     rb_define_singleton_method(cBCryptEngine, "__bc_salt", bc_salt, 3);
+      |                                                            ^~~~~~~
+      |                                                            |
+      |                                                            VALUE (*)(VALUE,  VALUE,  VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int,  long long unsigned int,  long long unsigned int)}
+In file included from C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:2150,
+                 from C:/Ruby27-x64/include/ruby-2.7.0/ruby.h:33,
+                 from bcrypt_ext.c:1:
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE,  VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int,  long long unsigned int,  long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+bcrypt_ext.c:26:14: note: 'bc_salt' declared here
+   26 | static VALUE bc_salt(VALUE self, VALUE prefix, VALUE count, VALUE input) {
+      |              ^~~~~~~
+bcrypt_ext.c:118:61: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+  118 |     rb_define_singleton_method(cBCryptEngine, "__bc_crypt", bc_crypt, 2);
+      |                                                             ^~~~~~~~
+      |                                                             |
+      |                                                             VALUE (*)(VALUE,  VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int,  long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int,  long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+bcrypt_ext.c:75:14: note: 'bc_crypt' declared here
+   75 | static VALUE bc_crypt(VALUE self, VALUE key, VALUE setting) {
+      |              ^~~~~~~~
+make: *** [Makefile:246: bcrypt_ext.o] Error 1
+
+make failed, exit code 2

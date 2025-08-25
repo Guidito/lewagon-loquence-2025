@@ -1,0 +1,1638 @@
+current directory: D:/Guido/dashboardruby/lewagon-loquence/vendor/bundle/ruby/2.7.0/gems/date-3.4.1/ext/date
+C:/Ruby27-x64/bin/ruby.exe -I C:/Ruby27-x64/lib/ruby/2.7.0 -r ./siteconf20250824-3616-1twst3w.rb extconf.rb
+checking for rb_category_warn()... no
+checking for timezone in time.h with  -Werror... yes
+checking for altzone in time.h with  -Werror... no
+creating Makefile
+
+current directory: D:/Guido/dashboardruby/lewagon-loquence/vendor/bundle/ruby/2.7.0/gems/date-3.4.1/ext/date
+make "DESTDIR=" clean
+
+current directory: D:/Guido/dashboardruby/lewagon-loquence/vendor/bundle/ruby/2.7.0/gems/date-3.4.1/ext/date
+make "DESTDIR="
+generating date_core-x64-mingw32.def
+compiling date_core.c
+date_core.c: In function 'Init_date_core':
+date_core.c:9655:52: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9655 |     rb_define_singleton_method(cDate, "valid_jd?", date_s_valid_jd_p, -1);
+      |                                                    ^~~~~~~~~~~~~~~~~
+      |                                                    |
+      |                                                    VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+In file included from C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:2150,
+                 from C:/Ruby27-x64/include/ruby-2.7.0/ruby.h:33,
+                 from date_core.c:5:
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:2506:1: note: 'date_s_valid_jd_p' declared here
+ 2506 | date_s_valid_jd_p(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~~
+date_core.c:9657:32: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9657 |                                date_s_valid_ordinal_p, -1);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~
+      |                                |
+      |                                VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:2688:1: note: 'date_s_valid_ordinal_p' declared here
+ 2688 | date_s_valid_ordinal_p(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~~~~~~~
+date_core.c:9658:55: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9658 |     rb_define_singleton_method(cDate, "valid_civil?", date_s_valid_civil_p, -1);
+      |                                                       ^~~~~~~~~~~~~~~~~~~~
+      |                                                       |
+      |                                                       VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:2600:1: note: 'date_s_valid_civil_p' declared here
+ 2600 | date_s_valid_civil_p(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~~~~~
+date_core.c:9659:54: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9659 |     rb_define_singleton_method(cDate, "valid_date?", date_s_valid_civil_p, -1);
+      |                                                      ^~~~~~~~~~~~~~~~~~~~
+      |                                                      |
+      |                                                      VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:2600:1: note: 'date_s_valid_civil_p' declared here
+ 2600 | date_s_valid_civil_p(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~~~~~
+date_core.c:9661:32: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9661 |                                date_s_valid_commercial_p, -1);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                |
+      |                                VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:2778:1: note: 'date_s_valid_commercial_p' declared here
+ 2778 | date_s_valid_commercial_p(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~
+date_core.c:9672:55: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9672 |     rb_define_singleton_method(cDate, "julian_leap?", date_s_julian_leap_p, 1);
+      |                                                       ^~~~~~~~~~~~~~~~~~~~
+      |                                                       |
+      |                                                       VALUE (*)(VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:2972:1: note: 'date_s_julian_leap_p' declared here
+ 2972 | date_s_julian_leap_p(VALUE klass, VALUE y)
+      | ^~~~~~~~~~~~~~~~~~~~
+date_core.c:9674:32: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9674 |                                date_s_gregorian_leap_p, 1);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~
+      |                                |
+      |                                VALUE (*)(VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:2995:1: note: 'date_s_gregorian_leap_p' declared here
+ 2995 | date_s_gregorian_leap_p(VALUE klass, VALUE y)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+date_core.c:9676:32: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9676 |                                date_s_gregorian_leap_p, 1);
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~
+      |                                |
+      |                                VALUE (*)(VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:2995:1: note: 'date_s_gregorian_leap_p' declared here
+ 2995 | date_s_gregorian_leap_p(VALUE klass, VALUE y)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+date_core.c:9683:45: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9683 |     rb_define_singleton_method(cDate, "jd", date_s_jd, -1);
+      |                                             ^~~~~~~~~
+      |                                             |
+      |                                             VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:3358:1: note: 'date_s_jd' declared here
+ 3358 | date_s_jd(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~
+date_core.c:9684:50: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9684 |     rb_define_singleton_method(cDate, "ordinal", date_s_ordinal, -1);
+      |                                                  ^~~~~~~~~~~~~~
+      |                                                  |
+      |                                                  VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:3423:1: note: 'date_s_ordinal' declared here
+ 3423 | date_s_ordinal(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~
+date_core.c:9685:48: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9685 |     rb_define_singleton_method(cDate, "civil", date_s_civil, -1);
+      |                                                ^~~~~~~~~~~~
+      |                                                |
+      |                                                VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:3471:1: note: 'date_s_civil' declared here
+ 3471 | date_s_civil(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~
+date_core.c:9686:53: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9686 |     rb_define_singleton_method(cDate, "commercial", date_s_commercial, -1);
+      |                                                     ^~~~~~~~~~~~~~~~~
+      |                                                     |
+      |                                                     VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:3606:1: note: 'date_s_commercial' declared here
+ 3606 | date_s_commercial(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~~
+date_core.c:9693:48: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9693 |     rb_define_singleton_method(cDate, "today", date_s_today, -1);
+      |                                                ^~~~~~~~~~~~
+      |                                                |
+      |                                                VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:3790:1: note: 'date_s_today' declared here
+ 3790 | date_s_today(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~
+date_core.c:9694:52: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9694 |     rb_define_singleton_method(cDate, "_strptime", date_s__strptime, -1);
+      |                                                    ^~~~~~~~~~~~~~~~
+      |                                                    |
+      |                                                    VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:4394:1: note: 'date_s__strptime' declared here
+ 4394 | date_s__strptime(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~
+date_core.c:9695:51: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9695 |     rb_define_singleton_method(cDate, "strptime", date_s_strptime, -1);
+      |                                                   ^~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:4425:1: note: 'date_s_strptime' declared here
+ 4425 | date_s_strptime(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~
+date_core.c:9696:49: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9696 |     rb_define_singleton_method(cDate, "_parse", date_s__parse, -1);
+      |                                                 ^~~~~~~~~~~~~
+      |                                                 |
+      |                                                 VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:4530:1: note: 'date_s__parse' declared here
+ 4530 | date_s__parse(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~
+date_core.c:9697:48: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9697 |     rb_define_singleton_method(cDate, "parse", date_s_parse, -1);
+      |                                                ^~~~~~~~~~~~
+      |                                                |
+      |                                                VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:4569:1: note: 'date_s_parse' declared here
+ 4569 | date_s_parse(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~
+date_core.c:9698:51: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9698 |     rb_define_singleton_method(cDate, "_iso8601", date_s__iso8601, -1);
+      |                                                   ^~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:4618:1: note: 'date_s__iso8601' declared here
+ 4618 | date_s__iso8601(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~
+date_core.c:9699:50: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9699 |     rb_define_singleton_method(cDate, "iso8601", date_s_iso8601, -1);
+      |                                                  ^~~~~~~~~~~~~~
+      |                                                  |
+      |                                                  VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:4648:1: note: 'date_s_iso8601' declared here
+ 4648 | date_s_iso8601(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~
+date_core.c:9700:51: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9700 |     rb_define_singleton_method(cDate, "_rfc3339", date_s__rfc3339, -1);
+      |                                                   ^~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:4688:1: note: 'date_s__rfc3339' declared here
+ 4688 | date_s__rfc3339(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~
+date_core.c:9701:50: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9701 |     rb_define_singleton_method(cDate, "rfc3339", date_s_rfc3339, -1);
+      |                                                  ^~~~~~~~~~~~~~
+      |                                                  |
+      |                                                  VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:4718:1: note: 'date_s_rfc3339' declared here
+ 4718 | date_s_rfc3339(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~
+date_core.c:9702:53: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9702 |     rb_define_singleton_method(cDate, "_xmlschema", date_s__xmlschema, -1);
+      |                                                     ^~~~~~~~~~~~~~~~~
+      |                                                     |
+      |                                                     VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:4757:1: note: 'date_s__xmlschema' declared here
+ 4757 | date_s__xmlschema(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~~
+date_core.c:9703:52: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9703 |     rb_define_singleton_method(cDate, "xmlschema", date_s_xmlschema, -1);
+      |                                                    ^~~~~~~~~~~~~~~~
+      |                                                    |
+      |                                                    VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:4786:1: note: 'date_s_xmlschema' declared here
+ 4786 | date_s_xmlschema(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~
+date_core.c:9704:51: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9704 |     rb_define_singleton_method(cDate, "_rfc2822", date_s__rfc2822, -1);
+      |                                                   ^~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:4826:1: note: 'date_s__rfc2822' declared here
+ 4826 | date_s__rfc2822(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~
+date_core.c:9705:50: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9705 |     rb_define_singleton_method(cDate, "_rfc822", date_s__rfc2822, -1);
+      |                                                  ^~~~~~~~~~~~~~~
+      |                                                  |
+      |                                                  VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:4826:1: note: 'date_s__rfc2822' declared here
+ 4826 | date_s__rfc2822(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~
+date_core.c:9706:50: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9706 |     rb_define_singleton_method(cDate, "rfc2822", date_s_rfc2822, -1);
+      |                                                  ^~~~~~~~~~~~~~
+      |                                                  |
+      |                                                  VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:4856:1: note: 'date_s_rfc2822' declared here
+ 4856 | date_s_rfc2822(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~
+date_core.c:9707:49: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9707 |     rb_define_singleton_method(cDate, "rfc822", date_s_rfc2822, -1);
+      |                                                 ^~~~~~~~~~~~~~
+      |                                                 |
+      |                                                 VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:4856:1: note: 'date_s_rfc2822' declared here
+ 4856 | date_s_rfc2822(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~
+date_core.c:9708:52: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9708 |     rb_define_singleton_method(cDate, "_httpdate", date_s__httpdate, -1);
+      |                                                    ^~~~~~~~~~~~~~~~
+      |                                                    |
+      |                                                    VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:4894:1: note: 'date_s__httpdate' declared here
+ 4894 | date_s__httpdate(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~
+date_core.c:9709:51: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9709 |     rb_define_singleton_method(cDate, "httpdate", date_s_httpdate, -1);
+      |                                                   ^~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:4924:1: note: 'date_s_httpdate' declared here
+ 4924 | date_s_httpdate(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~
+date_core.c:9710:52: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9710 |     rb_define_singleton_method(cDate, "_jisx0301", date_s__jisx0301, -1);
+      |                                                    ^~~~~~~~~~~~~~~~
+      |                                                    |
+      |                                                    VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:4963:1: note: 'date_s__jisx0301' declared here
+ 4963 | date_s__jisx0301(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~
+date_core.c:9711:51: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9711 |     rb_define_singleton_method(cDate, "jisx0301", date_s_jisx0301, -1);
+      |                                                   ^~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:4996:1: note: 'date_s_jisx0301' declared here
+ 4996 | date_s_jisx0301(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~
+date_core.c:9713:43: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9713 |     rb_define_method(cDate, "initialize", date_initialize, -1);
+      |                                           ^~~~~~~~~~~~~~~
+      |                                           |
+      |                                           VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:3500:1: note: 'date_initialize' declared here
+ 3500 | date_initialize(int argc, VALUE *argv, VALUE self)
+      | ^~~~~~~~~~~~~~~
+date_core.c:9714:48: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9714 |     rb_define_method(cDate, "initialize_copy", d_lite_initialize_copy, 1);
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~
+      |                                                |
+      |                                                VALUE (*)(VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5140:1: note: 'd_lite_initialize_copy' declared here
+ 5140 | d_lite_initialize_copy(VALUE copy, VALUE date)
+      | ^~~~~~~~~~~~~~~~~~~~~~
+date_core.c:9720:36: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9720 |     rb_define_method(cDate, "ajd", d_lite_ajd, 0);
+      |                                    ^~~~~~~~~~
+      |                                    |
+      |                                    VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5215:1: note: 'd_lite_ajd' declared here
+ 5215 | d_lite_ajd(VALUE self)
+      | ^~~~~~~~~~
+date_core.c:9721:37: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9721 |     rb_define_method(cDate, "amjd", d_lite_amjd, 0);
+      |                                     ^~~~~~~~~~~
+      |                                     |
+      |                                     VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5232:1: note: 'd_lite_amjd' declared here
+ 5232 | d_lite_amjd(VALUE self)
+      | ^~~~~~~~~~~
+date_core.c:9722:35: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9722 |     rb_define_method(cDate, "jd", d_lite_jd, 0);
+      |                                   ^~~~~~~~~
+      |                                   |
+      |                                   VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5249:1: note: 'd_lite_jd' declared here
+ 5249 | d_lite_jd(VALUE self)
+      | ^~~~~~~~~
+date_core.c:9723:36: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9723 |     rb_define_method(cDate, "mjd", d_lite_mjd, 0);
+      |                                    ^~~~~~~~~~
+      |                                    |
+      |                                    VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5266:1: note: 'd_lite_mjd' declared here
+ 5266 | d_lite_mjd(VALUE self)
+      | ^~~~~~~~~~
+date_core.c:9724:35: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9724 |     rb_define_method(cDate, "ld", d_lite_ld, 0);
+      |                                   ^~~~~~~~~
+      |                                   |
+      |                                   VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5285:1: note: 'd_lite_ld' declared here
+ 5285 | d_lite_ld(VALUE self)
+      | ^~~~~~~~~
+date_core.c:9726:37: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9726 |     rb_define_method(cDate, "year", d_lite_year, 0);
+      |                                     ^~~~~~~~~~~
+      |                                     |
+      |                                     VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5302:1: note: 'd_lite_year' declared here
+ 5302 | d_lite_year(VALUE self)
+      | ^~~~~~~~~~~
+date_core.c:9727:37: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9727 |     rb_define_method(cDate, "yday", d_lite_yday, 0);
+      |                                     ^~~~~~~~~~~
+      |                                     |
+      |                                     VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5318:1: note: 'd_lite_yday' declared here
+ 5318 | d_lite_yday(VALUE self)
+      | ^~~~~~~~~~~
+date_core.c:9728:36: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9728 |     rb_define_method(cDate, "mon", d_lite_mon, 0);
+      |                                    ^~~~~~~~~~
+      |                                    |
+      |                                    VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5334:1: note: 'd_lite_mon' declared here
+ 5334 | d_lite_mon(VALUE self)
+      | ^~~~~~~~~~
+date_core.c:9729:38: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9729 |     rb_define_method(cDate, "month", d_lite_mon, 0);
+      |                                      ^~~~~~~~~~
+      |                                      |
+      |                                      VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5334:1: note: 'd_lite_mon' declared here
+ 5334 | d_lite_mon(VALUE self)
+      | ^~~~~~~~~~
+date_core.c:9730:37: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9730 |     rb_define_method(cDate, "mday", d_lite_mday, 0);
+      |                                     ^~~~~~~~~~~
+      |                                     |
+      |                                     VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5350:1: note: 'd_lite_mday' declared here
+ 5350 | d_lite_mday(VALUE self)
+      | ^~~~~~~~~~~
+date_core.c:9731:36: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9731 |     rb_define_method(cDate, "day", d_lite_mday, 0);
+      |                                    ^~~~~~~~~~~
+      |                                    |
+      |                                    VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5350:1: note: 'd_lite_mday' declared here
+ 5350 | d_lite_mday(VALUE self)
+      | ^~~~~~~~~~~
+date_core.c:9732:45: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9732 |     rb_define_method(cDate, "day_fraction", d_lite_day_fraction, 0);
+      |                                             ^~~~~~~~~~~~~~~~~~~
+      |                                             |
+      |                                             VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5366:1: note: 'd_lite_day_fraction' declared here
+ 5366 | d_lite_day_fraction(VALUE self)
+      | ^~~~~~~~~~~~~~~~~~~
+date_core.c:9734:39: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9734 |     rb_define_method(cDate, "cwyear", d_lite_cwyear, 0);
+      |                                       ^~~~~~~~~~~~~
+      |                                       |
+      |                                       VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5386:1: note: 'd_lite_cwyear' declared here
+ 5386 | d_lite_cwyear(VALUE self)
+      | ^~~~~~~~~~~~~
+date_core.c:9735:38: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9735 |     rb_define_method(cDate, "cweek", d_lite_cweek, 0);
+      |                                      ^~~~~~~~~~~~
+      |                                      |
+      |                                      VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5403:1: note: 'd_lite_cweek' declared here
+ 5403 | d_lite_cweek(VALUE self)
+      | ^~~~~~~~~~~~
+date_core.c:9736:38: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9736 |     rb_define_method(cDate, "cwday", d_lite_cwday, 0);
+      |                                      ^~~~~~~~~~~~
+      |                                      |
+      |                                      VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5421:1: note: 'd_lite_cwday' declared here
+ 5421 | d_lite_cwday(VALUE self)
+      | ^~~~~~~~~~~~
+date_core.c:9743:37: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9743 |     rb_define_method(cDate, "wday", d_lite_wday, 0);
+      |                                     ^~~~~~~~~~~
+      |                                     |
+      |                                     VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5455:1: note: 'd_lite_wday' declared here
+ 5455 | d_lite_wday(VALUE self)
+      | ^~~~~~~~~~~
+date_core.c:9745:40: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9745 |     rb_define_method(cDate, "sunday?", d_lite_sunday_p, 0);
+      |                                        ^~~~~~~~~~~~~~~
+      |                                        |
+      |                                        VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5468:1: note: 'd_lite_sunday_p' declared here
+ 5468 | d_lite_sunday_p(VALUE self)
+      | ^~~~~~~~~~~~~~~
+date_core.c:9746:40: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9746 |     rb_define_method(cDate, "monday?", d_lite_monday_p, 0);
+      |                                        ^~~~~~~~~~~~~~~
+      |                                        |
+      |                                        VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5481:1: note: 'd_lite_monday_p' declared here
+ 5481 | d_lite_monday_p(VALUE self)
+      | ^~~~~~~~~~~~~~~
+date_core.c:9747:41: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9747 |     rb_define_method(cDate, "tuesday?", d_lite_tuesday_p, 0);
+      |                                         ^~~~~~~~~~~~~~~~
+      |                                         |
+      |                                         VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5494:1: note: 'd_lite_tuesday_p' declared here
+ 5494 | d_lite_tuesday_p(VALUE self)
+      | ^~~~~~~~~~~~~~~~
+date_core.c:9748:43: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9748 |     rb_define_method(cDate, "wednesday?", d_lite_wednesday_p, 0);
+      |                                           ^~~~~~~~~~~~~~~~~~
+      |                                           |
+      |                                           VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5507:1: note: 'd_lite_wednesday_p' declared here
+ 5507 | d_lite_wednesday_p(VALUE self)
+      | ^~~~~~~~~~~~~~~~~~
+date_core.c:9749:42: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9749 |     rb_define_method(cDate, "thursday?", d_lite_thursday_p, 0);
+      |                                          ^~~~~~~~~~~~~~~~~
+      |                                          |
+      |                                          VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5520:1: note: 'd_lite_thursday_p' declared here
+ 5520 | d_lite_thursday_p(VALUE self)
+      | ^~~~~~~~~~~~~~~~~
+date_core.c:9750:40: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9750 |     rb_define_method(cDate, "friday?", d_lite_friday_p, 0);
+      |                                        ^~~~~~~~~~~~~~~
+      |                                        |
+      |                                        VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5533:1: note: 'd_lite_friday_p' declared here
+ 5533 | d_lite_friday_p(VALUE self)
+      | ^~~~~~~~~~~~~~~
+date_core.c:9751:42: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9751 |     rb_define_method(cDate, "saturday?", d_lite_saturday_p, 0);
+      |                                          ^~~~~~~~~~~~~~~~~
+      |                                          |
+      |                                          VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5546:1: note: 'd_lite_saturday_p' declared here
+ 5546 | d_lite_saturday_p(VALUE self)
+      | ^~~~~~~~~~~~~~~~~
+date_core.c:9757:45: error: passing argument 3 of 'rb_define_private_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9757 |     rb_define_private_method(cDate, "hour", d_lite_zero, 0);
+      |                                             ^~~~~~~~~~~
+      |                                             |
+      |                                             VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:238:51: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+  238 | void rb_define_private_method(VALUE, const char*, VALUE (*)(ANYARGS), int);
+      |                                                   ^~~~~~~~~~~~~~~~~~
+date_core.c:9469:1: note: 'd_lite_zero' declared here
+ 9469 | d_lite_zero(VALUE x)
+      | ^~~~~~~~~~~
+date_core.c:9758:44: error: passing argument 3 of 'rb_define_private_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9758 |     rb_define_private_method(cDate, "min", d_lite_zero, 0);
+      |                                            ^~~~~~~~~~~
+      |                                            |
+      |                                            VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:238:51: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+  238 | void rb_define_private_method(VALUE, const char*, VALUE (*)(ANYARGS), int);
+      |                                                   ^~~~~~~~~~~~~~~~~~
+date_core.c:9469:1: note: 'd_lite_zero' declared here
+ 9469 | d_lite_zero(VALUE x)
+      | ^~~~~~~~~~~
+date_core.c:9759:47: error: passing argument 3 of 'rb_define_private_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9759 |     rb_define_private_method(cDate, "minute", d_lite_zero, 0);
+      |                                               ^~~~~~~~~~~
+      |                                               |
+      |                                               VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:238:51: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+  238 | void rb_define_private_method(VALUE, const char*, VALUE (*)(ANYARGS), int);
+      |                                                   ^~~~~~~~~~~~~~~~~~
+date_core.c:9469:1: note: 'd_lite_zero' declared here
+ 9469 | d_lite_zero(VALUE x)
+      | ^~~~~~~~~~~
+date_core.c:9760:44: error: passing argument 3 of 'rb_define_private_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9760 |     rb_define_private_method(cDate, "sec", d_lite_zero, 0);
+      |                                            ^~~~~~~~~~~
+      |                                            |
+      |                                            VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:238:51: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+  238 | void rb_define_private_method(VALUE, const char*, VALUE (*)(ANYARGS), int);
+      |                                                   ^~~~~~~~~~~~~~~~~~
+date_core.c:9469:1: note: 'd_lite_zero' declared here
+ 9469 | d_lite_zero(VALUE x)
+      | ^~~~~~~~~~~
+date_core.c:9761:47: error: passing argument 3 of 'rb_define_private_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9761 |     rb_define_private_method(cDate, "second", d_lite_zero, 0);
+      |                                               ^~~~~~~~~~~
+      |                                               |
+      |                                               VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:238:51: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+  238 | void rb_define_private_method(VALUE, const char*, VALUE (*)(ANYARGS), int);
+      |                                                   ^~~~~~~~~~~~~~~~~~
+date_core.c:9469:1: note: 'd_lite_zero' declared here
+ 9469 | d_lite_zero(VALUE x)
+      | ^~~~~~~~~~~
+date_core.c:9763:40: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9763 |     rb_define_method(cDate, "julian?", d_lite_julian_p, 0);
+      |                                        ^~~~~~~~~~~~~~~
+      |                                        |
+      |                                        VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5680:1: note: 'd_lite_julian_p' declared here
+ 5680 | d_lite_julian_p(VALUE self)
+      | ^~~~~~~~~~~~~~~
+date_core.c:9764:43: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9764 |     rb_define_method(cDate, "gregorian?", d_lite_gregorian_p, 0);
+      |                                           ^~~~~~~~~~~~~~~~~~
+      |                                           |
+      |                                           VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5698:1: note: 'd_lite_gregorian_p' declared here
+ 5698 | d_lite_gregorian_p(VALUE self)
+      | ^~~~~~~~~~~~~~~~~~
+date_core.c:9765:38: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9765 |     rb_define_method(cDate, "leap?", d_lite_leap_p, 0);
+      |                                      ^~~~~~~~~~~~~
+      |                                      |
+      |                                      VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5715:1: note: 'd_lite_leap_p' declared here
+ 5715 | d_lite_leap_p(VALUE self)
+      | ^~~~~~~~~~~~~
+date_core.c:9767:38: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9767 |     rb_define_method(cDate, "start", d_lite_start, 0);
+      |                                      ^~~~~~~~~~~~
+      |                                      |
+      |                                      VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5752:1: note: 'd_lite_start' declared here
+ 5752 | d_lite_start(VALUE self)
+      | ^~~~~~~~~~~~
+date_core.c:9768:42: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9768 |     rb_define_method(cDate, "new_start", d_lite_new_start, -1);
+      |                                          ^~~~~~~~~~~~~~~~
+      |                                          |
+      |                                          VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5827:1: note: 'd_lite_new_start' declared here
+ 5827 | d_lite_new_start(int argc, VALUE *argv, VALUE self)
+      | ^~~~~~~~~~~~~~~~
+date_core.c:9769:38: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9769 |     rb_define_method(cDate, "italy", d_lite_italy, 0);
+      |                                      ^~~~~~~~~~~~
+      |                                      |
+      |                                      VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5849:1: note: 'd_lite_italy' declared here
+ 5849 | d_lite_italy(VALUE self)
+      | ^~~~~~~~~~~~
+date_core.c:9770:40: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9770 |     rb_define_method(cDate, "england", d_lite_england, 0);
+      |                                        ^~~~~~~~~~~~~~
+      |                                        |
+      |                                        VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5861:1: note: 'd_lite_england' declared here
+ 5861 | d_lite_england(VALUE self)
+      | ^~~~~~~~~~~~~~
+date_core.c:9771:39: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9771 |     rb_define_method(cDate, "julian", d_lite_julian, 0);
+      |                                       ^~~~~~~~~~~~~
+      |                                       |
+      |                                       VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5873:1: note: 'd_lite_julian' declared here
+ 5873 | d_lite_julian(VALUE self)
+      | ^~~~~~~~~~~~~
+date_core.c:9772:42: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9772 |     rb_define_method(cDate, "gregorian", d_lite_gregorian, 0);
+      |                                          ^~~~~~~~~~~~~~~~
+      |                                          |
+      |                                          VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5885:1: note: 'd_lite_gregorian' declared here
+ 5885 | d_lite_gregorian(VALUE self)
+      | ^~~~~~~~~~~~~~~~
+date_core.c:9774:34: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9774 |     rb_define_method(cDate, "+", d_lite_plus, 1);
+      |                                  ^~~~~~~~~~~
+      |                                  |
+      |                                  VALUE (*)(VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5953:1: note: 'd_lite_plus' declared here
+ 5953 | d_lite_plus(VALUE self, VALUE other)
+      | ^~~~~~~~~~~
+date_core.c:9775:34: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9775 |     rb_define_method(cDate, "-", d_lite_minus, 1);
+      |                                  ^~~~~~~~~~~~
+      |                                  |
+      |                                  VALUE (*)(VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:6344:1: note: 'd_lite_minus' declared here
+ 6344 | d_lite_minus(VALUE self, VALUE other)
+      | ^~~~~~~~~~~~
+date_core.c:9777:41: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9777 |     rb_define_method(cDate, "next_day", d_lite_next_day, -1);
+      |                                         ^~~~~~~~~~~~~~~
+      |                                         |
+      |                                         VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:6370:1: note: 'd_lite_next_day' declared here
+ 6370 | d_lite_next_day(int argc, VALUE *argv, VALUE self)
+      | ^~~~~~~~~~~~~~~
+date_core.c:9778:41: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9778 |     rb_define_method(cDate, "prev_day", d_lite_prev_day, -1);
+      |                                         ^~~~~~~~~~~~~~~
+      |                                         |
+      |                                         VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:6387:1: note: 'd_lite_prev_day' declared here
+ 6387 | d_lite_prev_day(int argc, VALUE *argv, VALUE self)
+      | ^~~~~~~~~~~~~~~
+date_core.c:9779:37: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9779 |     rb_define_method(cDate, "next", d_lite_next, 0);
+      |                                     ^~~~~~~~~~~
+      |                                     |
+      |                                     VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:6409:1: note: 'd_lite_next' declared here
+ 6409 | d_lite_next(VALUE self)
+      | ^~~~~~~~~~~
+date_core.c:9780:37: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9780 |     rb_define_method(cDate, "succ", d_lite_next, 0);
+      |                                     ^~~~~~~~~~~
+      |                                     |
+      |                                     VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:6409:1: note: 'd_lite_next' declared here
+ 6409 | d_lite_next(VALUE self)
+      | ^~~~~~~~~~~
+date_core.c:9782:35: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9782 |     rb_define_method(cDate, ">>", d_lite_rshift, 1);
+      |                                   ^~~~~~~~~~~~~
+      |                                   |
+      |                                   VALUE (*)(VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:6442:1: note: 'd_lite_rshift' declared here
+ 6442 | d_lite_rshift(VALUE self, VALUE other)
+      | ^~~~~~~~~~~~~
+date_core.c:9783:35: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9783 |     rb_define_method(cDate, "<<", d_lite_lshift, 1);
+      |                                   ^~~~~~~~~~~~~
+      |                                   |
+      |                                   VALUE (*)(VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:6508:1: note: 'd_lite_lshift' declared here
+ 6508 | d_lite_lshift(VALUE self, VALUE other)
+      | ^~~~~~~~~~~~~
+date_core.c:9785:43: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9785 |     rb_define_method(cDate, "next_month", d_lite_next_month, -1);
+      |                                           ^~~~~~~~~~~~~~~~~
+      |                                           |
+      |                                           VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:6521:1: note: 'd_lite_next_month' declared here
+ 6521 | d_lite_next_month(int argc, VALUE *argv, VALUE self)
+      | ^~~~~~~~~~~~~~~~~
+date_core.c:9786:43: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9786 |     rb_define_method(cDate, "prev_month", d_lite_prev_month, -1);
+      |                                           ^~~~~~~~~~~~~~~~~
+      |                                           |
+      |                                           VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:6538:1: note: 'd_lite_prev_month' declared here
+ 6538 | d_lite_prev_month(int argc, VALUE *argv, VALUE self)
+      | ^~~~~~~~~~~~~~~~~
+date_core.c:9787:42: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9787 |     rb_define_method(cDate, "next_year", d_lite_next_year, -1);
+      |                                          ^~~~~~~~~~~~~~~~
+      |                                          |
+      |                                          VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:6555:1: note: 'd_lite_next_year' declared here
+ 6555 | d_lite_next_year(int argc, VALUE *argv, VALUE self)
+      | ^~~~~~~~~~~~~~~~
+date_core.c:9788:42: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9788 |     rb_define_method(cDate, "prev_year", d_lite_prev_year, -1);
+      |                                          ^~~~~~~~~~~~~~~~
+      |                                          |
+      |                                          VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:6572:1: note: 'd_lite_prev_year' declared here
+ 6572 | d_lite_prev_year(int argc, VALUE *argv, VALUE self)
+      | ^~~~~~~~~~~~~~~~
+date_core.c:9790:37: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9790 |     rb_define_method(cDate, "step", d_lite_step, -1);
+      |                                     ^~~~~~~~~~~
+      |                                     |
+      |                                     VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:6615:1: note: 'd_lite_step' declared here
+ 6615 | d_lite_step(int argc, VALUE *argv, VALUE self)
+      | ^~~~~~~~~~~
+date_core.c:9791:37: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9791 |     rb_define_method(cDate, "upto", d_lite_upto, 1);
+      |                                     ^~~~~~~~~~~
+      |                                     |
+      |                                     VALUE (*)(VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:6660:1: note: 'd_lite_upto' declared here
+ 6660 | d_lite_upto(VALUE self, VALUE max)
+      | ^~~~~~~~~~~
+date_core.c:9792:39: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9792 |     rb_define_method(cDate, "downto", d_lite_downto, 1);
+      |                                       ^~~~~~~~~~~~~
+      |                                       |
+      |                                       VALUE (*)(VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:6681:1: note: 'd_lite_downto' declared here
+ 6681 | d_lite_downto(VALUE self, VALUE min)
+      | ^~~~~~~~~~~~~
+date_core.c:9794:36: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9794 |     rb_define_method(cDate, "<=>", d_lite_cmp, 1);
+      |                                    ^~~~~~~~~~
+      |                                    |
+      |                                    VALUE (*)(VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:6805:1: note: 'd_lite_cmp' declared here
+ 6805 | d_lite_cmp(VALUE self, VALUE other)
+      | ^~~~~~~~~~
+date_core.c:9795:36: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9795 |     rb_define_method(cDate, "===", d_lite_equal, 1);
+      |                                    ^~~~~~~~~~~~
+      |                                    |
+      |                                    VALUE (*)(VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:6897:1: note: 'd_lite_equal' declared here
+ 6897 | d_lite_equal(VALUE self, VALUE other)
+      | ^~~~~~~~~~~~
+date_core.c:9796:37: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9796 |     rb_define_method(cDate, "eql?", d_lite_eql_p, 1);
+      |                                     ^~~~~~~~~~~~
+      |                                     |
+      |                                     VALUE (*)(VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:6928:1: note: 'd_lite_eql_p' declared here
+ 6928 | d_lite_eql_p(VALUE self, VALUE other)
+      | ^~~~~~~~~~~~
+date_core.c:9797:37: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9797 |     rb_define_method(cDate, "hash", d_lite_hash, 0);
+      |                                     ^~~~~~~~~~~
+      |                                     |
+      |                                     VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:6937:1: note: 'd_lite_hash' declared here
+ 6937 | d_lite_hash(VALUE self)
+      | ^~~~~~~~~~~
+date_core.c:9799:37: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9799 |     rb_define_method(cDate, "to_s", d_lite_to_s, 0);
+      |                                     ^~~~~~~~~~~
+      |                                     |
+      |                                     VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:6967:1: note: 'd_lite_to_s' declared here
+ 6967 | d_lite_to_s(VALUE self)
+      | ^~~~~~~~~~~
+date_core.c:9803:40: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9803 |     rb_define_method(cDate, "inspect", d_lite_inspect, 0);
+      |                                        ^~~~~~~~~~~~~~
+      |                                        |
+      |                                        VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:7054:1: note: 'd_lite_inspect' declared here
+ 7054 | d_lite_inspect(VALUE self)
+      | ^~~~~~~~~~~~~~
+date_core.c:9805:41: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9805 |     rb_define_method(cDate, "strftime", d_lite_strftime, -1);
+      |                                         ^~~~~~~~~~~~~~~
+      |                                         |
+      |                                         VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:7245:1: note: 'd_lite_strftime' declared here
+ 7245 | d_lite_strftime(int argc, VALUE *argv, VALUE self)
+      | ^~~~~~~~~~~~~~~
+date_core.c:9807:40: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9807 |     rb_define_method(cDate, "asctime", d_lite_asctime, 0);
+      |                                        ^~~~~~~~~~~~~~
+      |                                        |
+      |                                        VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:7282:1: note: 'd_lite_asctime' declared here
+ 7282 | d_lite_asctime(VALUE self)
+      | ^~~~~~~~~~~~~~
+date_core.c:9808:38: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9808 |     rb_define_method(cDate, "ctime", d_lite_asctime, 0);
+      |                                      ^~~~~~~~~~~~~~
+      |                                      |
+      |                                      VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:7282:1: note: 'd_lite_asctime' declared here
+ 7282 | d_lite_asctime(VALUE self)
+      | ^~~~~~~~~~~~~~
+date_core.c:9809:40: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9809 |     rb_define_method(cDate, "iso8601", d_lite_iso8601, 0);
+      |                                        ^~~~~~~~~~~~~~
+      |                                        |
+      |                                        VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:7299:1: note: 'd_lite_iso8601' declared here
+ 7299 | d_lite_iso8601(VALUE self)
+      | ^~~~~~~~~~~~~~
+date_core.c:9810:42: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9810 |     rb_define_method(cDate, "xmlschema", d_lite_iso8601, 0);
+      |                                          ^~~~~~~~~~~~~~
+      |                                          |
+      |                                          VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:7299:1: note: 'd_lite_iso8601' declared here
+ 7299 | d_lite_iso8601(VALUE self)
+      | ^~~~~~~~~~~~~~
+date_core.c:9811:40: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9811 |     rb_define_method(cDate, "rfc3339", d_lite_rfc3339, 0);
+      |                                        ^~~~~~~~~~~~~~
+      |                                        |
+      |                                        VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:7315:1: note: 'd_lite_rfc3339' declared here
+ 7315 | d_lite_rfc3339(VALUE self)
+      | ^~~~~~~~~~~~~~
+date_core.c:9812:40: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9812 |     rb_define_method(cDate, "rfc2822", d_lite_rfc2822, 0);
+      |                                        ^~~~~~~~~~~~~~
+      |                                        |
+      |                                        VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:7331:1: note: 'd_lite_rfc2822' declared here
+ 7331 | d_lite_rfc2822(VALUE self)
+      | ^~~~~~~~~~~~~~
+date_core.c:9813:39: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9813 |     rb_define_method(cDate, "rfc822", d_lite_rfc2822, 0);
+      |                                       ^~~~~~~~~~~~~~
+      |                                       |
+      |                                       VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:7331:1: note: 'd_lite_rfc2822' declared here
+ 7331 | d_lite_rfc2822(VALUE self)
+      | ^~~~~~~~~~~~~~
+date_core.c:9814:41: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9814 |     rb_define_method(cDate, "httpdate", d_lite_httpdate, 0);
+      |                                         ^~~~~~~~~~~~~~~
+      |                                         |
+      |                                         VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:7347:1: note: 'd_lite_httpdate' declared here
+ 7347 | d_lite_httpdate(VALUE self)
+      | ^~~~~~~~~~~~~~~
+date_core.c:9815:41: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9815 |     rb_define_method(cDate, "jisx0301", d_lite_jisx0301, 0);
+      |                                         ^~~~~~~~~~~~~~~
+      |                                         |
+      |                                         VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:7404:1: note: 'd_lite_jisx0301' declared here
+ 7404 | d_lite_jisx0301(VALUE self)
+      | ^~~~~~~~~~~~~~~
+date_core.c:9817:49: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9817 |     rb_define_method(cDate, "deconstruct_keys", d_lite_deconstruct_keys, 1);
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~
+      |                                                 |
+      |                                                 VALUE (*)(VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:7501:1: note: 'd_lite_deconstruct_keys' declared here
+ 7501 | d_lite_deconstruct_keys(VALUE self, VALUE keys)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+date_core.c:9822:45: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9822 |     rb_define_method(cDate, "marshal_dump", d_lite_marshal_dump, 0);
+      |                                             ^~~~~~~~~~~~~~~~~~~
+      |                                             |
+      |                                             VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:7531:1: note: 'd_lite_marshal_dump' declared here
+ 7531 | d_lite_marshal_dump(VALUE self)
+      | ^~~~~~~~~~~~~~~~~~~
+date_core.c:9823:45: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9823 |     rb_define_method(cDate, "marshal_load", d_lite_marshal_load, 1);
+      |                                             ^~~~~~~~~~~~~~~~~~~
+      |                                             |
+      |                                             VALUE (*)(VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:7555:1: note: 'd_lite_marshal_load' declared here
+ 7555 | d_lite_marshal_load(VALUE self, VALUE a)
+      | ^~~~~~~~~~~~~~~~~~~
+date_core.c:9824:48: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9824 |     rb_define_singleton_method(cDate, "_load", date_s__load, 1);
+      |                                                ^~~~~~~~~~~~
+      |                                                |
+      |                                                VALUE (*)(VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:7631:1: note: 'date_s__load' declared here
+ 7631 | date_s__load(VALUE klass, VALUE s)
+      | ^~~~~~~~~~~~
+date_core.c:9971:49: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9971 |     rb_define_singleton_method(cDateTime, "jd", datetime_s_jd, -1);
+      |                                                 ^~~~~~~~~~~~~
+      |                                                 |
+      |                                                 VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:7655:1: note: 'datetime_s_jd' declared here
+ 7655 | datetime_s_jd(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~
+date_core.c:9972:54: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9972 |     rb_define_singleton_method(cDateTime, "ordinal", datetime_s_ordinal, -1);
+      |                                                      ^~~~~~~~~~~~~~~~~~
+      |                                                      |
+      |                                                      VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:7727:1: note: 'datetime_s_ordinal' declared here
+ 7727 | datetime_s_ordinal(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~~~
+date_core.c:9973:52: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9973 |     rb_define_singleton_method(cDateTime, "civil", datetime_s_civil, -1);
+      |                                                    ^~~~~~~~~~~~~~~~
+      |                                                    |
+      |                                                    VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:7798:1: note: 'datetime_s_civil' declared here
+ 7798 | datetime_s_civil(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~
+date_core.c:9974:50: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9974 |     rb_define_singleton_method(cDateTime, "new", datetime_s_civil, -1);
+      |                                                  ^~~~~~~~~~~~~~~~
+      |                                                  |
+      |                                                  VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:7798:1: note: 'datetime_s_civil' declared here
+ 7798 | datetime_s_civil(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~
+date_core.c:9976:32: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9976 |                                datetime_s_commercial, -1);
+      |                                ^~~~~~~~~~~~~~~~~~~~~
+      |                                |
+      |                                VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:7913:1: note: 'datetime_s_commercial' declared here
+ 7913 | datetime_s_commercial(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~~~~~~
+date_core.c:9987:50: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9987 |     rb_define_singleton_method(cDateTime, "now", datetime_s_now, -1);
+      |                                                  ^~~~~~~~~~~~~~
+      |                                                  |
+      |                                                  VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:8135:1: note: 'datetime_s_now' declared here
+ 8135 | datetime_s_now(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~
+date_core.c:9989:32: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9989 |                                datetime_s__strptime, -1);
+      |                                ^~~~~~~~~~~~~~~~~~~~
+      |                                |
+      |                                VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:8336:1: note: 'datetime_s__strptime' declared here
+ 8336 | datetime_s__strptime(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~~~~~
+date_core.c:9991:32: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9991 |                                datetime_s_strptime, -1);
+      |                                ^~~~~~~~~~~~~~~~~~~
+      |                                |
+      |                                VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:8369:1: note: 'datetime_s_strptime' declared here
+ 8369 | datetime_s_strptime(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~~~~
+date_core.c:9993:32: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9993 |                                datetime_s_parse, -1);
+      |                                ^~~~~~~~~~~~~~~~
+      |                                |
+      |                                VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:8421:1: note: 'datetime_s_parse' declared here
+ 8421 | datetime_s_parse(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~
+date_core.c:9995:32: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9995 |                                datetime_s_iso8601, -1);
+      |                                ^~~~~~~~~~~~~~~~~~
+      |                                |
+      |                                VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:8467:1: note: 'datetime_s_iso8601' declared here
+ 8467 | datetime_s_iso8601(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~~~
+date_core.c:9997:32: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9997 |                                datetime_s_rfc3339, -1);
+      |                                ^~~~~~~~~~~~~~~~~~
+      |                                |
+      |                                VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:8506:1: note: 'datetime_s_rfc3339' declared here
+ 8506 | datetime_s_rfc3339(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~~~
+date_core.c:9999:32: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+ 9999 |                                datetime_s_xmlschema, -1);
+      |                                ^~~~~~~~~~~~~~~~~~~~
+      |                                |
+      |                                VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:8545:1: note: 'datetime_s_xmlschema' declared here
+ 8545 | datetime_s_xmlschema(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~~~~~
+date_core.c:10001:32: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10001 |                                datetime_s_rfc2822, -1);
+      |                                ^~~~~~~~~~~~~~~~~~
+      |                                |
+      |                                VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:8585:1: note: 'datetime_s_rfc2822' declared here
+ 8585 | datetime_s_rfc2822(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~~~
+date_core.c:10003:32: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10003 |                                datetime_s_rfc2822, -1);
+      |                                ^~~~~~~~~~~~~~~~~~
+      |                                |
+      |                                VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:8585:1: note: 'datetime_s_rfc2822' declared here
+ 8585 | datetime_s_rfc2822(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~~~
+date_core.c:10005:32: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10005 |                                datetime_s_httpdate, -1);
+      |                                ^~~~~~~~~~~~~~~~~~~
+      |                                |
+      |                                VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:8624:1: note: 'datetime_s_httpdate' declared here
+ 8624 | datetime_s_httpdate(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~~~~
+date_core.c:10007:32: error: passing argument 3 of 'rb_define_singleton_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10007 |                                datetime_s_jisx0301, -1);
+      |                                ^~~~~~~~~~~~~~~~~~~
+      |                                |
+      |                                VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/intern.h:239:53: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+  239 | void rb_define_singleton_method(VALUE, const char*, VALUE(*)(ANYARGS), int);
+      |                                                     ^~~~~~~~~~~~~~~~~
+date_core.c:8668:1: note: 'datetime_s_jisx0301' declared here
+ 8668 | datetime_s_jisx0301(int argc, VALUE *argv, VALUE klass)
+      | ^~~~~~~~~~~~~~~~~~~
+date_core.c:10009:41: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10009 |     rb_define_method(cDateTime, "hour", d_lite_hour, 0);
+      |                                         ^~~~~~~~~~~
+      |                                         |
+      |                                         VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5583:1: note: 'd_lite_hour' declared here
+ 5583 | d_lite_hour(VALUE self)
+      | ^~~~~~~~~~~
+date_core.c:10010:40: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10010 |     rb_define_method(cDateTime, "min", d_lite_min, 0);
+      |                                        ^~~~~~~~~~
+      |                                        |
+      |                                        VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5599:1: note: 'd_lite_min' declared here
+ 5599 | d_lite_min(VALUE self)
+      | ^~~~~~~~~~
+date_core.c:10011:43: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10011 |     rb_define_method(cDateTime, "minute", d_lite_min, 0);
+      |                                           ^~~~~~~~~~
+      |                                           |
+      |                                           VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5599:1: note: 'd_lite_min' declared here
+ 5599 | d_lite_min(VALUE self)
+      | ^~~~~~~~~~
+date_core.c:10012:40: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10012 |     rb_define_method(cDateTime, "sec", d_lite_sec, 0);
+      |                                        ^~~~~~~~~~
+      |                                        |
+      |                                        VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5615:1: note: 'd_lite_sec' declared here
+ 5615 | d_lite_sec(VALUE self)
+      | ^~~~~~~~~~
+date_core.c:10013:43: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10013 |     rb_define_method(cDateTime, "second", d_lite_sec, 0);
+      |                                           ^~~~~~~~~~
+      |                                           |
+      |                                           VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5615:1: note: 'd_lite_sec' declared here
+ 5615 | d_lite_sec(VALUE self)
+      | ^~~~~~~~~~
+date_core.c:10014:49: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10014 |     rb_define_method(cDateTime, "sec_fraction", d_lite_sec_fraction, 0);
+      |                                                 ^~~~~~~~~~~~~~~~~~~
+      |                                                 |
+      |                                                 VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5632:1: note: 'd_lite_sec_fraction' declared here
+ 5632 | d_lite_sec_fraction(VALUE self)
+      | ^~~~~~~~~~~~~~~~~~~
+date_core.c:10015:52: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10015 |     rb_define_method(cDateTime, "second_fraction", d_lite_sec_fraction, 0);
+      |                                                    ^~~~~~~~~~~~~~~~~~~
+      |                                                    |
+      |                                                    VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5632:1: note: 'd_lite_sec_fraction' declared here
+ 5632 | d_lite_sec_fraction(VALUE self)
+      | ^~~~~~~~~~~~~~~~~~~
+date_core.c:10016:43: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10016 |     rb_define_method(cDateTime, "offset", d_lite_offset, 0);
+      |                                           ^~~~~~~~~~~~~
+      |                                           |
+      |                                           VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5647:1: note: 'd_lite_offset' declared here
+ 5647 | d_lite_offset(VALUE self)
+      | ^~~~~~~~~~~~~
+date_core.c:10017:41: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10017 |     rb_define_method(cDateTime, "zone", d_lite_zone, 0);
+      |                                         ^~~~~~~~~~~
+      |                                         |
+      |                                         VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5662:1: note: 'd_lite_zone' declared here
+ 5662 | d_lite_zone(VALUE self)
+      | ^~~~~~~~~~~
+date_core.c:10018:47: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10018 |     rb_define_method(cDateTime, "new_offset", d_lite_new_offset, -1);
+      |                                               ^~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:5922:1: note: 'd_lite_new_offset' declared here
+ 5922 | d_lite_new_offset(int argc, VALUE *argv, VALUE self)
+      | ^~~~~~~~~~~~~~~~~
+date_core.c:10020:41: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10020 |     rb_define_method(cDateTime, "to_s", dt_lite_to_s, 0);
+      |                                         ^~~~~~~~~~~~
+      |                                         |
+      |                                         VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:8703:1: note: 'dt_lite_to_s' declared here
+ 8703 | dt_lite_to_s(VALUE self)
+      | ^~~~~~~~~~~~
+date_core.c:10022:45: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10022 |     rb_define_method(cDateTime, "strftime", dt_lite_strftime, -1);
+      |                                             ^~~~~~~~~~~~~~~~
+      |                                             |
+      |                                             VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:8722:1: note: 'dt_lite_strftime' declared here
+ 8722 | dt_lite_strftime(int argc, VALUE *argv, VALUE self)
+      | ^~~~~~~~~~~~~~~~
+date_core.c:10024:44: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10024 |     rb_define_method(cDateTime, "iso8601", dt_lite_iso8601, -1);
+      |                                            ^~~~~~~~~~~~~~~
+      |                                            |
+      |                                            VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:8756:1: note: 'dt_lite_iso8601' declared here
+ 8756 | dt_lite_iso8601(int argc, VALUE *argv, VALUE self)
+      | ^~~~~~~~~~~~~~~
+date_core.c:10025:46: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10025 |     rb_define_method(cDateTime, "xmlschema", dt_lite_iso8601, -1);
+      |                                              ^~~~~~~~~~~~~~~
+      |                                              |
+      |                                              VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:8756:1: note: 'dt_lite_iso8601' declared here
+ 8756 | dt_lite_iso8601(int argc, VALUE *argv, VALUE self)
+      | ^~~~~~~~~~~~~~~
+date_core.c:10026:44: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10026 |     rb_define_method(cDateTime, "rfc3339", dt_lite_rfc3339, -1);
+      |                                            ^~~~~~~~~~~~~~~
+      |                                            |
+      |                                            VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:8779:1: note: 'dt_lite_rfc3339' declared here
+ 8779 | dt_lite_rfc3339(int argc, VALUE *argv, VALUE self)
+      | ^~~~~~~~~~~~~~~
+date_core.c:10027:45: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10027 |     rb_define_method(cDateTime, "jisx0301", dt_lite_jisx0301, -1);
+      |                                             ^~~~~~~~~~~~~~~~
+      |                                             |
+      |                                             VALUE (*)(int,  VALUE *, VALUE) {aka long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(int,  VALUE *, VALUE)' {aka 'long long unsigned int (*)(int,  long long unsigned int *, long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:8795:1: note: 'dt_lite_jisx0301' declared here
+ 8795 | dt_lite_jisx0301(int argc, VALUE *argv, VALUE self)
+      | ^~~~~~~~~~~~~~~~
+date_core.c:10029:53: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10029 |     rb_define_method(cDateTime, "deconstruct_keys", dt_lite_deconstruct_keys, 1);
+      |                                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                     |
+      |                                                     VALUE (*)(VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:8843:1: note: 'dt_lite_deconstruct_keys' declared here
+ 8843 | dt_lite_deconstruct_keys(VALUE self, VALUE keys)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~
+date_core.c:10033:43: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10033 |     rb_define_method(rb_cTime, "to_time", time_to_time, 0);
+      |                                           ^~~~~~~~~~~~
+      |                                           |
+      |                                           VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:8861:1: note: 'time_to_time' declared here
+ 8861 | time_to_time(VALUE self)
+      | ^~~~~~~~~~~~
+date_core.c:10034:43: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10034 |     rb_define_method(rb_cTime, "to_date", time_to_date, 0);
+      |                                           ^~~~~~~~~~~~
+      |                                           |
+      |                                           VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:8873:1: note: 'time_to_date' declared here
+ 8873 | time_to_date(VALUE self)
+      | ^~~~~~~~~~~~
+date_core.c:10035:47: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10035 |     rb_define_method(rb_cTime, "to_datetime", time_to_datetime, 0);
+      |                                               ^~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:8903:1: note: 'time_to_datetime' declared here
+ 8903 | time_to_datetime(VALUE self)
+      | ^~~~~~~~~~~~~~~~
+date_core.c:10037:40: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10037 |     rb_define_method(cDate, "to_time", date_to_time, 0);
+      |                                        ^~~~~~~~~~~~
+      |                                        |
+      |                                        VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:8950:1: note: 'date_to_time' declared here
+ 8950 | date_to_time(VALUE self)
+      | ^~~~~~~~~~~~
+date_core.c:10038:40: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10038 |     rb_define_method(cDate, "to_date", date_to_date, 0);
+      |                                        ^~~~~~~~~~~~
+      |                                        |
+      |                                        VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:8978:1: note: 'date_to_date' declared here
+ 8978 | date_to_date(VALUE self)
+      | ^~~~~~~~~~~~
+date_core.c:10039:44: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10039 |     rb_define_method(cDate, "to_datetime", date_to_datetime, 0);
+      |                                            ^~~~~~~~~~~~~~~~
+      |                                            |
+      |                                            VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:8993:1: note: 'date_to_datetime' declared here
+ 8993 | date_to_datetime(VALUE self)
+      | ^~~~~~~~~~~~~~~~
+date_core.c:10041:44: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10041 |     rb_define_method(cDateTime, "to_time", datetime_to_time, 0);
+      |                                            ^~~~~~~~~~~~~~~~
+      |                                            |
+      |                                            VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:9033:1: note: 'datetime_to_time' declared here
+ 9033 | datetime_to_time(VALUE self)
+      | ^~~~~~~~~~~~~~~~
+date_core.c:10042:44: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10042 |     rb_define_method(cDateTime, "to_date", datetime_to_date, 0);
+      |                                            ^~~~~~~~~~~~~~~~
+      |                                            |
+      |                                            VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:9070:1: note: 'datetime_to_date' declared here
+ 9070 | datetime_to_date(VALUE self)
+      | ^~~~~~~~~~~~~~~~
+date_core.c:10043:48: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+10043 |     rb_define_method(cDateTime, "to_datetime", datetime_to_datetime, 0);
+      |                                                ^~~~~~~~~~~~~~~~~~~~
+      |                                                |
+      |                                                VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+date_core.c:9102:1: note: 'datetime_to_datetime' declared here
+ 9102 | datetime_to_datetime(VALUE self)
+      | ^~~~~~~~~~~~~~~~~~~~
+make: *** [Makefile:246: date_core.o] Error 1
+
+make failed, exit code 2

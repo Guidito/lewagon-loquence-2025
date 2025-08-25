@@ -1,0 +1,161 @@
+current directory: D:/Guido/dashboardruby/lewagon-loquence/vendor/bundle/ruby/2.7.0/gems/byebug-11.1.3/ext/byebug
+C:/Ruby27-x64/bin/ruby.exe -I C:/Ruby27-x64/lib/ruby/2.7.0 -r ./siteconf20250824-7436-19oaj40.rb extconf.rb
+creating Makefile
+
+current directory: D:/Guido/dashboardruby/lewagon-loquence/vendor/bundle/ruby/2.7.0/gems/byebug-11.1.3/ext/byebug
+make "DESTDIR=" clean
+
+current directory: D:/Guido/dashboardruby/lewagon-loquence/vendor/bundle/ruby/2.7.0/gems/byebug-11.1.3/ext/byebug
+make "DESTDIR="
+generating byebug-x64-mingw32.def
+compiling breakpoint.c
+breakpoint.c: In function 'Init_byebug_breakpoint':
+breakpoint.c:501:47: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+  501 |   rb_define_method(cBreakpoint, "initialize", brkpt_initialize, 3);
+      |                                               ^~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               VALUE (*)(VALUE,  VALUE,  VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int,  long long unsigned int,  long long unsigned int)}
+In file included from C:/Ruby27-x64/include/ruby-2.7.0/ruby.h:33,
+                 from byebug.h:4,
+                 from breakpoint.c:1:
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE,  VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int,  long long unsigned int,  long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+breakpoint.c:257:1: note: 'brkpt_initialize' declared here
+  257 | brkpt_initialize(VALUE self, VALUE source, VALUE pos, VALUE expr)
+      | ^~~~~~~~~~~~~~~~
+breakpoint.c:503:45: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+  503 |   rb_define_method(cBreakpoint, "enabled?", brkpt_enabled, 0);
+      |                                             ^~~~~~~~~~~~~
+      |                                             |
+      |                                             VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+breakpoint.c:31:1: note: 'brkpt_enabled' declared here
+   31 | brkpt_enabled(VALUE self)
+      | ^~~~~~~~~~~~~
+breakpoint.c:504:45: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+  504 |   rb_define_method(cBreakpoint, "enabled=", brkpt_set_enabled, 1);
+      |                                             ^~~~~~~~~~~~~~~~~
+      |                                             |
+      |                                             VALUE (*)(VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+breakpoint.c:46:1: note: 'brkpt_set_enabled' declared here
+   46 | brkpt_set_enabled(VALUE self, VALUE enabled)
+      | ^~~~~~~~~~~~~~~~~
+breakpoint.c:505:41: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+  505 |   rb_define_method(cBreakpoint, "expr", brkpt_expr, 0);
+      |                                         ^~~~~~~~~~
+      |                                         |
+      |                                         VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+breakpoint.c:62:1: note: 'brkpt_expr' declared here
+   62 | brkpt_expr(VALUE self)
+      | ^~~~~~~~~~
+breakpoint.c:506:42: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+  506 |   rb_define_method(cBreakpoint, "expr=", brkpt_set_expr, 1);
+      |                                          ^~~~~~~~~~~~~~
+      |                                          |
+      |                                          VALUE (*)(VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+breakpoint.c:78:1: note: 'brkpt_set_expr' declared here
+   78 | brkpt_set_expr(VALUE self, VALUE expr)
+      | ^~~~~~~~~~~~~~
+breakpoint.c:507:46: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+  507 |   rb_define_method(cBreakpoint, "hit_count", brkpt_hit_count, 0);
+      |                                              ^~~~~~~~~~~~~~~
+      |                                              |
+      |                                              VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+breakpoint.c:151:1: note: 'brkpt_hit_count' declared here
+  151 | brkpt_hit_count(VALUE self)
+      | ^~~~~~~~~~~~~~~
+breakpoint.c:508:50: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+  508 |   rb_define_method(cBreakpoint, "hit_condition", brkpt_hit_condition, 0);
+      |                                                  ^~~~~~~~~~~~~~~~~~~
+      |                                                  |
+      |                                                  VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+breakpoint.c:95:1: note: 'brkpt_hit_condition' declared here
+   95 | brkpt_hit_condition(VALUE self)
+      | ^~~~~~~~~~~~~~~~~~~
+breakpoint.c:509:51: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+  509 |   rb_define_method(cBreakpoint, "hit_condition=", brkpt_set_hit_condition, 1);
+      |                                                   ^~~~~~~~~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   VALUE (*)(VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+breakpoint.c:125:1: note: 'brkpt_set_hit_condition' declared here
+  125 | brkpt_set_hit_condition(VALUE self, VALUE value)
+      | ^~~~~~~~~~~~~~~~~~~~~~~
+breakpoint.c:510:46: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+  510 |   rb_define_method(cBreakpoint, "hit_value", brkpt_hit_value, 0);
+      |                                              ^~~~~~~~~~~~~~~
+      |                                              |
+      |                                              VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+breakpoint.c:167:1: note: 'brkpt_hit_value' declared here
+  167 | brkpt_hit_value(VALUE self)
+      | ^~~~~~~~~~~~~~~
+breakpoint.c:511:47: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+  511 |   rb_define_method(cBreakpoint, "hit_value=", brkpt_set_hit_value, 1);
+      |                                               ^~~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               VALUE (*)(VALUE,  VALUE) {aka long long unsigned int (*)(long long unsigned int,  long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE,  VALUE)' {aka 'long long unsigned int (*)(long long unsigned int,  long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+breakpoint.c:183:1: note: 'brkpt_set_hit_value' declared here
+  183 | brkpt_set_hit_value(VALUE self, VALUE value)
+      | ^~~~~~~~~~~~~~~~~~~
+breakpoint.c:512:39: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+  512 |   rb_define_method(cBreakpoint, "id", brkpt_id, 0);
+      |                                       ^~~~~~~~
+      |                                       |
+      |                                       VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+breakpoint.c:199:1: note: 'brkpt_id' declared here
+  199 | brkpt_id(VALUE self)
+      | ^~~~~~~~
+breakpoint.c:513:40: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+  513 |   rb_define_method(cBreakpoint, "pos", brkpt_pos, 0);
+      |                                        ^~~~~~~~~
+      |                                        |
+      |                                        VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+breakpoint.c:215:1: note: 'brkpt_pos' declared here
+  215 | brkpt_pos(VALUE self)
+      | ^~~~~~~~~
+breakpoint.c:514:43: error: passing argument 3 of 'rb_define_method' from incompatible pointer type [-Wincompatible-pointer-types]
+  514 |   rb_define_method(cBreakpoint, "source", brkpt_source, 0);
+      |                                           ^~~~~~~~~~~~
+      |                                           |
+      |                                           VALUE (*)(VALUE) {aka long long unsigned int (*)(long long unsigned int)}
+C:/Ruby27-x64/include/ruby-2.7.0/ruby/ruby.h:1807:41: note: expected 'VALUE (*)(void)' {aka 'long long unsigned int (*)(void)'} but argument is of type 'VALUE (*)(VALUE)' {aka 'long long unsigned int (*)(long long unsigned int)'}
+ 1807 | void rb_define_method(VALUE,const char*,VALUE(*)(ANYARGS),int);
+      |                                         ^~~~~~~~~~~~~~~~~
+breakpoint.c:233:1: note: 'brkpt_source' declared here
+  233 | brkpt_source(VALUE self)
+      | ^~~~~~~~~~~~
+make: *** [Makefile:246: breakpoint.o] Error 1
+
+make failed, exit code 2
