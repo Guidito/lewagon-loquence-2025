@@ -49,7 +49,7 @@ group :development do
   gem 'web-console', '>= 3.3.0'
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'wdm', '>= 0.1.0'       # watcher de archivos en Windows
+  gem 'wdm', '>= 0.1.0', platforms: [:mingw, :x64_mingw, :mswin]
 end
 
 group :development, :test do

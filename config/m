@@ -1,0 +1,6 @@
+DB_HOST=127.0.0.1
+DB_PORT=5432
+DB_NAME_DEV=loquence_development
+DB_NAME_TEST=loquence_test
+DB_USER=postgres
+DB_PASSWORD=root

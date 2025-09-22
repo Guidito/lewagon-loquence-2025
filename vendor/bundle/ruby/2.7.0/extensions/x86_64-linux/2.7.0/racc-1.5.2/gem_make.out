@@ -1,0 +1,16 @@
+current directory: /home/guido/lewagon-loquence-2025/vendor/bundle/ruby/2.7.0/gems/racc-1.5.2/ext/racc/cparse
+/home/guido/.rbenv/versions/2.7.8/bin/ruby -I /home/guido/.rbenv/versions/2.7.8/lib/ruby/2.7.0 -r ./siteconf20250824-9332-161jbpm.rb extconf.rb
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /home/guido/lewagon-loquence-2025/vendor/bundle/ruby/2.7.0/gems/racc-1.5.2/ext/racc/cparse
+make "DESTDIR=" clean
+
+current directory: /home/guido/lewagon-loquence-2025/vendor/bundle/ruby/2.7.0/gems/racc-1.5.2/ext/racc/cparse
+make "DESTDIR="
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /home/guido/lewagon-loquence-2025/vendor/bundle/ruby/2.7.0/gems/racc-1.5.2/ext/racc/cparse
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20250824-9332-1lt8yz9/racc

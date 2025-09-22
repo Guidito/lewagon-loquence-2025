@@ -1,0 +1,11 @@
+current directory: /home/guido/lewagon-loquence-2025/vendor/bundle/ruby/2.7.0/gems/wdm-0.2.0/ext/wdm
+/home/guido/.rbenv/versions/2.7.8/bin/ruby -I /home/guido/.rbenv/versions/2.7.8/lib/ruby/2.7.0 -r ./siteconf20250824-9332-1kd8p9m.rb extconf.rb
+
+current directory: /home/guido/lewagon-loquence-2025/vendor/bundle/ruby/2.7.0/gems/wdm-0.2.0/ext/wdm
+make "DESTDIR=" clean
+
+current directory: /home/guido/lewagon-loquence-2025/vendor/bundle/ruby/2.7.0/gems/wdm-0.2.0/ext/wdm
+make "DESTDIR="
+
+current directory: /home/guido/lewagon-loquence-2025/vendor/bundle/ruby/2.7.0/gems/wdm-0.2.0/ext/wdm
+make "DESTDIR=" install
