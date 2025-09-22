@@ -33,13 +33,15 @@
 │   │   └── refs
 │   │       ├── heads
 │   │       │   ├── chore
-│   │       │   │   └── add-project-tree
+│   │       │   │   ├── add-project-tree
+│   │       │   │   └── app-inventory
 │   │       │   └── main
 │   │       └── remotes
 │   │           └── origin
 │   │               ├── HEAD
 │   │               ├── chore
 │   │               │   ├── add-project-tree
+│   │               │   ├── app-inventory
 │   │               │   └── windows-ruby27-bootstrap
 │   │               └── main
 │   ├── objects
@@ -487,6 +489,7 @@
 │   │   │   ├── e8390c2a412f2426c23ea8a12c50c93f8dd1bc
 │   │   │   └── ed05b2dfc7593a03f12b527b60b7fa074ea734
 │   │   ├── 16
+│   │   │   ├── 16a3a70ef1bdf3a7b53bc94b392f642faf5e54
 │   │   │   ├── 232c2cbe37417cc50459a4c105ba69e0653165
 │   │   │   ├── 27db803e5770e37d563620837c182298292906
 │   │   │   ├── 2861de0588c4c82e0fd7f9d72ed5c725098b98
@@ -555,6 +558,7 @@
 │   │   │   ├── a07f31468bb0c0576b8756b8109224766cf705
 │   │   │   ├── b0958a4cdc95d0d7298a90280bb100cbfd2928
 │   │   │   ├── be4f2f51417cedf2b587883e18deed73dfbe95
+│   │   │   ├── c395d826bb2aac99343f6cc75c9ac366abbf11
 │   │   │   ├── d11eaedc3fb1cd46e2af26662f422306bfd4bb
 │   │   │   ├── d37ed9a29c60c07b47c03b7c9aed7069a4943f
 │   │   │   ├── d71458a9fd103633498b4a49b9528945d00dbd
@@ -855,6 +859,7 @@
 │   │   │   ├── 2186e0732a06db2567582bdf8b680a63b308a3
 │   │   │   ├── 23f23ce4fb03bd28bea56ea9666e3c2da6e50d
 │   │   │   ├── 27920fc2d9d959e9e28cafb9877c0fe069c75d
+│   │   │   ├── 3097aca91be6c06671ecd630f6c1765f3d020f
 │   │   │   ├── 4bda0fec0e47da7191760ff9f81e28cdd4861a
 │   │   │   ├── 54b5d1fd7908b0e925dc56aa51aa3d0955e97a
 │   │   │   ├── 556cf6e9b0f9bd3519a5d7dd4023f3acdf5502
@@ -1496,6 +1501,7 @@
 │   │   │   ├── 1c70201b12cee921cbb0e761802ed9605bc3e3
 │   │   │   ├── 1d71d765e013974e57c84175df743cedced881
 │   │   │   ├── 2ed641b33592a1a06c511b46af6f83956e3684
+│   │   │   ├── 4011e561fb660a4eb606df8e536ac7a1b19f08
 │   │   │   ├── 4bc5e6ab21a86bf0d1fb841dc48ad920d212ed
 │   │   │   ├── 4d7cb1a669e58d9df854a080334d5c64905776
 │   │   │   ├── 6b861d4ffd54848f30ca8001983f569b82c83c
@@ -1537,7 +1543,8 @@
 │   │   │   ├── cd51bdd0599fed51df2fa09a315abd41a20924
 │   │   │   ├── d74d3fbd7e582e36344fdff1ed38adc7ea2e0d
 │   │   │   ├── e33b9bac9b83a30172cb5b977c552e408ee31e
-│   │   │   └── ee5612b1fc669af8e035c763f99c1221a2e3c7
+│   │   │   ├── ee5612b1fc669af8e035c763f99c1221a2e3c7
+│   │   │   └── fc704c28e62f88671b4b00c6429606e8309b97
 │   │   ├── 4a
 │   │   │   ├── 01512dab600e8072e44fdb60e4488c6fbdfe3e
 │   │   │   ├── 0c5497290d6d56fa82f771a5e1115bdca06176
@@ -1823,6 +1830,7 @@
 │   │   │   └── fe8737b1efd213cbbcfbee3bbba83ae4a74800
 │   │   ├── 58
 │   │   │   ├── 06f0182c7792fe8a08d38fb3942b404ae45047
+│   │   │   ├── 23dbc068fda216c41f19d7b81a62acc196790f
 │   │   │   ├── 259e89a77b5db690b19479175e973d5a714385
 │   │   │   ├── 335d90997b2013d788b0a75b032c38c98b3b42
 │   │   │   ├── 7a72729c68f45e1de031332bd2057f3f6baf6e
@@ -1860,6 +1868,7 @@
 │   │   │   ├── 7aab997b50e823ac75ecb758da8e4d38bbf854
 │   │   │   ├── 8976c226ba964581b389c5d2ac06404ef9f91c
 │   │   │   ├── acd63a0f89ed40febc00a1480f05f427ab5d30
+│   │   │   ├── c1da5af5b64fcfaad51e02d48c390e21d0ebc2
 │   │   │   ├── c2a4dbbeee67922983efccea90a856521e7f93
 │   │   │   ├── c3a8425a87296a3a7147f1d6259b5c15d2f2c2
 │   │   │   ├── cebda2f56409b8fac719a1cd5914fc13724893
@@ -2547,6 +2556,7 @@
 │   │   │   ├── 7ea0085ba7fd163919790d823f09654316d21e
 │   │   │   ├── a16c17d1e181b69de333c4fef1e90ace077a76
 │   │   │   ├── cb9388889aad4457efd07ff8cf3b9f1a369aa9
+│   │   │   ├── d81e9fb8475fdc0607046d5b09e38704447cb7
 │   │   │   ├── ddd356ff94c23f76c8133f5ac4ff0414f92bdf
 │   │   │   ├── ecc0fefa52c7c90c2ed49c4df23e50f5c0c06a
 │   │   │   ├── fdbfec89b699a69e6d426d7833f13307672fc5
@@ -2642,6 +2652,7 @@
 │   │   │   ├── 2e8468373777335833c0f7786000649b04bb94
 │   │   │   ├── 329473d90e39b138ccfbef6ac56e7fc77342eb
 │   │   │   ├── 3bb2eff03a957eb219bd996c1e3ebb40355dd1
+│   │   │   ├── 4e73736e6240250b852985c568d85afe8d4593
 │   │   │   ├── 65709a3da015092bad14a4d08aa36ab879a547
 │   │   │   ├── 731940aa6b2db75dc30520919c414d9bb21a62
 │   │   │   ├── 77074a20215050ea869e4bc98b1cf489f1d8da
@@ -2875,6 +2886,7 @@
 │   │   ├── 8c
 │   │   │   ├── 0762c193fee179892d618b03f1f53728d98ac0
 │   │   │   ├── 0800667b7cffc1693ee8b0723ca7606107c794
+│   │   │   ├── 0bd4fed639ab0448d795bf830f284ee551c1f7
 │   │   │   ├── 190b88fc562d4fd28597a1e8cfc43c118f7750
 │   │   │   ├── 1ce6e3501a1683310d8b06ba4a5d1e01c47641
 │   │   │   ├── 335e4ffa179c165cd95c3b58e31689161c3037
@@ -3138,6 +3150,7 @@
 │   │   │   ├── c946300d636ad0baeda350f16e888b38c55274
 │   │   │   ├── cccbf9cf65b305381b2b478b3e965f02bd187c
 │   │   │   ├── ce65a48a2ddb8f7cfa0c92b85fc52e36f12456
+│   │   │   ├── d86c797d10b6b41772bc3ce2f6620a7566b23a
 │   │   │   ├── fcba60fa13131baca979547ba65b1897ad6fe8
 │   │   │   ├── fcc95964d258a4b84f54901c1bf7d184ad05bc
 │   │   │   └── fdfc8987815a9789e793961ebb864ad5ba984c
@@ -3439,6 +3452,7 @@
 │   │   │   ├── 7a71a270fbf945e33544085a66aca8999a2169
 │   │   │   ├── 7c93690aaee62eafb7234bc8cb033d725fc233
 │   │   │   ├── 9882b89d69325713d34c329c5e83f0f5e7eb59
+│   │   │   ├── be0056cf8be87ed0e80a2c6fc782157ad401b8
 │   │   │   ├── cebb29a3a23d31df8a0f39f0871de5e2d01a12
 │   │   │   ├── dd2611de32066a771bf5ebf5c50cb3ff382255
 │   │   │   ├── e2e1f28b97daf0698abca1298b07274e5440d6
@@ -3484,6 +3498,7 @@
 │   │   │   ├── 0e68b11aaf0ce67d77207085b3de1e18330dac
 │   │   │   ├── 15a9a5ace9f5fd56c8b0172478a6ea46011472
 │   │   │   ├── 1caaac4862ec5bb127c3edfcd422f853951690
+│   │   │   ├── 1df0693f48b87751571ceff6833a0eb0869563
 │   │   │   ├── 2be8adc17a19af2507c495887fce1c31c7a4e7
 │   │   │   ├── 308e979da343b92085f7d22d7c3f1f222305d6
 │   │   │   ├── 57b11c7d32a8ad44f8ff8e332238e9dbd8d145
@@ -4374,6 +4389,7 @@
 │   │   │   ├── 0a34e315c71bb5ebb66dffe845a9aade9d0635
 │   │   │   ├── 119dfac297d989a769bcc98cec3ef0fc76b461
 │   │   │   ├── 170ca6fa70d8c6e9c37d4b24980b2d1f19434f
+│   │   │   ├── 17121ee466b5eccd6ad7131c837731539ab2ba
 │   │   │   ├── 1c16a330ea7584259b71cc1e9d53df140d507b
 │   │   │   ├── 1cb8faaafa1c1eaf831dcb751d93d0f44d5330
 │   │   │   ├── 2967e21290eb4842d9749756b8c2f446a3131b
@@ -4664,6 +4680,7 @@
 │   │   ├── e8
 │   │   │   ├── 1dde2b2eb404bc0a60c37b9635dc3b0e972cc2
 │   │   │   ├── 435a4ce81ec259bc1248906d2646babdcc3e13
+│   │   │   ├── 53414a8deccfa6260adcf8de42f801bb2ece87
 │   │   │   ├── 89b60fb529865813750d8a5d73a9ec5afcd947
 │   │   │   ├── a03b91854dbecedb9ed6adaccfaf67f6c0a4b3
 │   │   │   ├── ae63fd0d6c40dc734a2b0f8ee1259f1590a880
@@ -5145,13 +5162,15 @@
 │   └── refs
 │       ├── heads
 │       │   ├── chore
-│       │   │   └── add-project-tree
+│       │   │   ├── add-project-tree
+│       │   │   └── app-inventory
 │       │   └── main
 │       ├── remotes
 │       │   └── origin
 │       │       ├── HEAD
 │       │       ├── chore
 │       │       │   ├── add-project-tree
+│       │       │   ├── app-inventory
 │       │       │   └── windows-ruby27-bootstrap
 │       │       └── main
 │       └── tags
@@ -5526,15 +5545,27 @@
 │   ├── seed_orders.rb
 │   └── seeds.rb
 ├── docs
+│   ├── application.rb.snippet
+│   ├── bundle_list.txt
+│   ├── controllers.txt
+│   ├── initializers.txt
+│   ├── jobs.txt
 │   ├── js_application_pack.js
+│   ├── models.txt
 │   ├── package.json.txt
+│   ├── rails_version.txt
+│   ├── rake_tasks.txt
+│   ├── routes.rb.snippet
 │   ├── routes.txt
+│   ├── ruby_version.txt
 │   ├── schema.rb
+│   ├── schema.rb.snippet
 │   ├── seeds_head.rb
 │   ├── stats.txt
 │   ├── stimulus_controllers.txt
 │   ├── tree.txt
-│   └── versions.txt
+│   ├── versions.txt
+│   └── yarn_list.txt
 ├── lib
 │   ├── assets
 │   │   └── .keep
@@ -5588,6 +5619,8 @@
 │   │   ├── manifest.json.br
 │   │   └── manifest.json.gz
 │   └── robots.txt
+├── storage
+│   └── .keep
 ├── test
 │   ├── application_system_test_case.rb
 │   ├── benchmarks.rb
@@ -5643,4 +5676,4 @@
 ├── yarn.lock
 └──  .env
 
-364 directories, 5279 files
+365 directories, 5311 files
