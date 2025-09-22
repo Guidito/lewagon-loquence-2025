@@ -1,0 +1,11 @@
+app/javascript/controllers:
+category_selector_controller.js
+chartkick_controller.js
+dashbuilder_autolaunch_controller.js
+dashbuilder_controller.js
+index.js
+load_animation_controller.js
+navbar_controller.js
+select2_controller.js
+slides_controller.js
+typed_controller.js
