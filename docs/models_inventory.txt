@@ -1,0 +1,60 @@
+app/models/user.rb:21:class User < ApplicationRecord
+app/models/user.rb:26:  belongs_to :company
+app/models/user.rb:27:  has_many :group_users, dependent: :destroy
+app/models/user.rb:28:  has_many :groups, through: :group_users
+app/models/user.rb:29:  has_many :report_accesses, through: :groups
+app/models/user.rb:30:  has_many :reports, through: :report_accesses
+app/models/user.rb:31:  has_many :reports_as_owner, foreign_key: :owner_id, class_name: 'Report'
+app/models/user.rb:32:  has_many :user_platforms, dependent: :destroy
+app/models/order_item.rb:17:class OrderItem < ApplicationRecord
+app/models/order_item.rb:18:  belongs_to :order
+app/models/order_item.rb:19:  belongs_to :product
+app/models/woocommerce_order.rb:10:class WoocommerceOrder < ApplicationRecord
+app/models/group.rb:12:class Group < ApplicationRecord
+app/models/group.rb:14:  has_many :report_accesses
+app/models/group.rb:15:  has_many :reports, through: :report_accesses
+app/models/group.rb:16:  has_many :group_users
+app/models/group.rb:17:  has_many :users, through: :group_users
+app/models/kpi.rb:14:class KPI < ApplicationRecord
+app/models/kpi.rb:15:  has_many :widgets, dependent: :destroy
+app/models/order.rb:20:class Order < ApplicationRecord
+app/models/order.rb:21:  belongs_to :buyer
+app/models/order.rb:22:  has_many :order_items, dependent: :destroy
+app/models/order.rb:23:  # belongs_to :external_order # needs to look up the order_id in the corresponding external_source, we may not be able to use the ActiveRecord association and code this method ourself
+app/models/widget.rb:16:class Widget < ApplicationRecord
+app/models/widget.rb:18:  belongs_to :report
+app/models/widget.rb:19:  belongs_to :kpi
+app/models/buyer.rb:13:class Buyer < ApplicationRecord
+app/models/buyer.rb:14:  has_many :orders, dependent: :destroy
+app/models/user_platform.rb:13:class UserPlatform < ApplicationRecord
+app/models/user_platform.rb:14:  belongs_to :platform
+app/models/user_platform.rb:15:  belongs_to :user
+app/models/report.rb:13:class Report < ApplicationRecord
+app/models/report.rb:14:  has_many :widgets, dependent: :destroy
+app/models/report.rb:15:  has_many :kpis, through: :widgets
+app/models/report.rb:16:  has_many :report_accesses, dependent: :destroy
+app/models/report.rb:17:  has_many :groups, through: :report_accesses
+app/models/report.rb:18:  has_many :group_users, through: :groups
+app/models/report.rb:19:  has_many :users, through: :group_users
+app/models/report.rb:20:  belongs_to :owner, class_name: "User"
+app/models/product.rb:14:class Product < ApplicationRecord
+app/models/product.rb:15:  has_many :order_items
+app/models/product.rb:16:  has_many :orders, through: :order_items
+app/models/group_user.rb:12:class GroupUser < ApplicationRecord
+app/models/group_user.rb:13:  belongs_to :user
+app/models/group_user.rb:14:  belongs_to :group
+app/models/amazon_order.rb:10:class AmazonOrder < ApplicationRecord
+app/models/company_group.rb:12:class CompanyGroup < ApplicationRecord
+app/models/company_group.rb:13:  belongs_to :company
+app/models/company_group.rb:14:  belongs_to :group
+app/models/company.rb:14:class Company < ApplicationRecord
+app/models/company.rb:16:  has_many :users, dependent: :destroy
+app/models/company.rb:17:  has_many :reports, through: :users, dependent: :destroy
+app/models/company.rb:18:  has_many :company_groups, dependent: :destroy
+app/models/company.rb:19:  has_many :groups, through: :company_groups
+app/models/company.rb:20:  belongs_to :owner, class_name: "User"
+app/models/report_access.rb:13:class ReportAccess < ApplicationRecord
+app/models/report_access.rb:14:  belongs_to :group
+app/models/report_access.rb:15:  belongs_to :report
+app/models/platform.rb:11:class Platform < ApplicationRecord
+app/models/platform.rb:12:  has_many :user_platforms

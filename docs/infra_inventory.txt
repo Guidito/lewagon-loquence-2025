@@ -1,0 +1,3 @@
+app/jobs/application_job.rb:1:class ApplicationJob < ActiveJob::Base
+app/mailers/application_mailer.rb:1:class ApplicationMailer < ActionMailer::Base
+photo_uploader.rb

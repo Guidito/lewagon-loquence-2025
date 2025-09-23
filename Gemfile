@@ -60,3 +60,5 @@ group :development, :test do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'dotenv-rails'
 end
+gem 'rails-erd', group: :development
+gem 'rails-erd', group: :development
