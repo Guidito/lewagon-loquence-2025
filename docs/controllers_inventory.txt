@@ -1,0 +1,62 @@
+app/controllers/users_controller.rb:1:class UsersController < ApplicationController
+app/controllers/users_controller.rb:2:  def create
+app/controllers/users_controller.rb:5:  def user_params
+app/controllers/widgets_controller.rb:1:class WidgetsController < ApplicationController
+app/controllers/widgets_controller.rb:5:  def create
+app/controllers/widgets_controller.rb:23:  def edit
+app/controllers/widgets_controller.rb:29:  def update
+app/controllers/widgets_controller.rb:39:  def destroy
+app/controllers/widgets_controller.rb:51:  def widget_params
+app/controllers/widgets_controller.rb:55:  def set_report
+app/controllers/widgets_controller.rb:60:  def set_widget
+app/controllers/settings_controller.rb:1:class SettingsController < ApplicationController
+app/controllers/settings_controller.rb:4:  def account
+app/controllers/settings_controller.rb:8:  def users
+app/controllers/settings_controller.rb:13:  def new
+app/controllers/settings_controller.rb:18:  def create
+app/controllers/settings_controller.rb:29:  def update
+app/controllers/settings_controller.rb:36:  def activate_shopify
+app/controllers/settings_controller.rb:55:  def init_body_tag
+app/controllers/settings_controller.rb:60:  def create_password(number)
+app/controllers/settings_controller.rb:65:  def user_params
+app/controllers/users/registrations_controller.rb:3:class Users::RegistrationsController < Devise::RegistrationsController
+app/controllers/users/registrations_controller.rb:8:  # def new
+app/controllers/users/registrations_controller.rb:13:  # def create
+app/controllers/users/registrations_controller.rb:18:  # def edit
+app/controllers/users/registrations_controller.rb:23:  # def update
+app/controllers/users/registrations_controller.rb:28:  # def destroy
+app/controllers/users/registrations_controller.rb:37:  # def cancel
+app/controllers/users/registrations_controller.rb:44:  # def configure_sign_up_params
+app/controllers/users/registrations_controller.rb:49:  # def configure_account_update_params
+app/controllers/users/registrations_controller.rb:54:  def after_sign_up_path_for(user)
+app/controllers/users/registrations_controller.rb:63:  def after_inactive_sign_up_path_for(user)
+app/controllers/users/registrations_controller.rb:70:  def method_name
+app/controllers/companies_controller.rb:1:class CompaniesController < ApplicationController
+app/controllers/companies_controller.rb:2:  def company_params
+app/controllers/report_accesses_controller.rb:1:class ReportAccessesController < ApplicationController
+app/controllers/report_accesses_controller.rb:2:  def create
+app/controllers/report_accesses_controller.rb:18:  def report_access_params
+app/controllers/application_controller.rb:1:class ApplicationController < ActionController::Base
+app/controllers/application_controller.rb:11:  def user_not_authorized
+app/controllers/application_controller.rb:16:  def default_url_options
+app/controllers/application_controller.rb:22:  def skip_pundit?
+app/controllers/onboarding_controller.rb:1:class OnboardingController < ApplicationController
+app/controllers/onboarding_controller.rb:6:  def show
+app/controllers/onboarding_controller.rb:13:  def update
+app/controllers/onboarding_controller.rb:24:  def user_params
+app/controllers/onboarding_controller.rb:28:  def init_body_classes
+app/controllers/reports/filters_controller.rb:1:class Reports::FiltersController < ApplicationController
+app/controllers/reports/filters_controller.rb:2:  def create
+app/controllers/reports/filters_controller.rb:11:  def filter_params
+app/controllers/pages_controller.rb:1:class PagesController < ApplicationController
+app/controllers/pages_controller.rb:4:  def home
+app/controllers/pages_controller.rb:9:  def info
+app/controllers/pages_controller.rb:12:  def coming_soon
+app/controllers/reports_controller.rb:1:class ReportsController < ApplicationController
+app/controllers/reports_controller.rb:4:  def index
+app/controllers/reports_controller.rb:9:  def new
+app/controllers/reports_controller.rb:14:  def create
+app/controllers/reports_controller.rb:25:  def show
+app/controllers/reports_controller.rb:30:  def edit
+app/controllers/reports_controller.rb:41:  def report_params
+app/controllers/reports_controller.rb:45:  def set_mini_navbar
